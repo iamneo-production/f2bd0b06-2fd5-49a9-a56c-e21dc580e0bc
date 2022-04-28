@@ -1,0 +1,25 @@
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* styling background image */
+.bg-img {
+    background-image: url("https://i.pinimg.com/originals/3a/21/4a/3a214af1caec7ceef2f5454df3464100.gif");
+    height: 670px;
+    background-size: cover;
+}
+
+.container {
+    padding: 20px;
+    background-color: rgb(40, 171, 231);
+    height: 320px;
+    width:30%;
+    align-items: center;
+    margin-left: 480px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+    color: rgb(14, 1, 1);
+}

@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">Rapid Grounds</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/book/menu']" routerLinkActive="active-link">Ground</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/about']" routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-6" *ngIf="menuData">
+            <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3 ">Back</a>
+            <img src="{{menuData[0].foodImg}}" width="100%"/>
+            <h1 class="mt-3">{{menuData[0].foodName}}</h1>
+            <p>{{menuData[0].foodDetails}}</p>
+            <p>{{menuData[0].foodPrice | currency :'INR'}}</p>
+        </div>
+
+        <div class="col-lg-6 col-12">
+            <h1>Enter Your Details</h1>
+            <form #customerform="ngForm" (ngSubmit)="customerUser()">
+                 
+                <input type="text" class="form-control" name="name" [(ngModel)]="customeruser.name"
+                #name="ngModel"  placeholder="Enter Your Full Name"  title="Please enter your FULL name." required/>
+                <input type="text" class="form-control" name="mobilenumber" [(ngModel)]="customeruser.mobilenumber"
+                #mobilenumber="ngModel" placeholder="Enter Your Mobile Number"  title="Mobile number should be ten digit"required/>
+                <input type="text" class="form-control" name="time" [(ngModel)]="customeruser.time"
+                #time="ngModel" placeholder="Enter Your Time Slot " required />
+                <input type="text" class="form-control" name="date" [(ngModel)]="customeruser.date"
+                #date="ngModel" placeholder="Enter Date " required/>
+                <!-- <button class="btn btn-md btn-dark mt-3" [routerLink]="['/popup']> Book Ground </button> -->
+                <!-- <a class="buybtn" [routerLink]="['/popup']"> Book Ground </a> -->
+                <button  type="submit" [routerLink]="['/popup']" class="btn btn-info"> Book Ground</button>
+            </form>
+        </div> 
+    </div>
+</div>
+
+
