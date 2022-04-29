@@ -1,0 +1,77 @@
+body {
+    height: 130%;
+    font-family: Arial, sans-serif;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+ 
+ 
+/* styling background image */
+.bg-img {
+    background-image: url("https://media.istockphoto.com/photos/green-grass-on-playing-field-background-picture-id953281916?k=20&m=953281916&s=612x612&w=0&h=1tXkFK3fWYQm_5fGNJH-iLcq24CdMkpvjWnBNBTZx18=");
+    height: 910px;
+    background-size: cover;
+    font-size: 20px;
+    color:rgb(18, 18, 19);
+    font-family:  "Times New Roman", Times, serif;
+    font-weight: 800px;
+}
+
+.cont {
+ 
+    display: flex;
+    margin-left: 100px;
+    height: 645px;
+    width: 700px;
+    padding: 15px;
+}
+
+.conts {
+
+    display: flex;
+    margin-left: 100px;
+    height: 250px;
+    width: 700px;
+    padding: 15px;
+    margin-top: 10px;
+    font-weight: 800px;
+  
+}
+
+form {
+    margin-top: 0;
+    padding: 2px;
+}
+
+.input {
+    width: 200%;
+    padding: 2px;
+}
+
+.button {
+    padding: 3px;
+    width: 150px;
+    color: white;
+}
+
+.points {
+    background-color: whitesmoke;
+    display: flex;
+    margin-left: 950px;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    margin-top: -540px;
+}
+
+.coupons {
+    background-color: whitesmoke;
+    display: flex;
+    margin-left: 950px;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    margin-top: 50px;
+}

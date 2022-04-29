@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="">RAPID GROUNDS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/home']"  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/menu']" routerLinkActive="active-link">GroundProfile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  [routerLink]="['/about']" routerLinkActive="active-link">CustomerDetails</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/add-ground']" routerLinkActive="active-link">Add Ground</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="active-link">AdminProfile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet"> -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <body>
+        <div class="bg-img">
+    <div class="cont">
+        <form>
+            <h2>
+              Admin profile</h2>
+            <h6>Admin ID : emp001</h6>
+            Name<br>
+            <input name="name" value="Alex" class="input">
+            <br><br> Email
+            <br>
+            <input name="email " value="alex123@gmail.com" class="input ">
+            <br><br> Mobile Number<br>
+            <input name="Number " value="1234567890" class="input ">
+            <br><br>Address
+            <br>
+            <input name="address " value="abc new cross road xyz street" class="input ">
+            <br><br> Change Password<br>
+            <input name="ChangePassword " class="input " minlength="8 ">
+            <br><br>
+            <input type="submit" value="Edit " class="button " style="background-color:red ">
+        </form>
+    </div>
+    <div class="conts">
+        <label>
+            <br>
+            <h3>Admin instructions</h3>
+            1.Admin can add new ground.<br>
+            2.Admin can edit and delete ground.<br>
+            3.Admin can reply to the customer reviews.<br>
+            4.Admin can block the coustomer.<br>
+            5.Admin can change and cancel the booking at anycost.<br>
+        </label>
+    </div>
+</div>
+

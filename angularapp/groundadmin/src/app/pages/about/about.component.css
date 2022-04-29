@@ -1,0 +1,62 @@
+body {
+    height: 150%;
+    font-family: Arial, sans-serif;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+     
+    /* styling background image */
+    .bg-img {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGTnl57VixEZiMP4BeHOWxPEK3Cz2vDfRzw&usqp=CAU");
+        height: 570px;
+        background-size: cover;
+        font-size: 18px;
+        color:rgb(17, 40, 250);
+        font-family:  "Times New Roman", Times, serif;
+    }
+      .container-1{
+        display:flex;
+      }
+
+      .container-2{
+        display:flex;
+        justify-content:space-between;
+      }
+    
+
+    .container-3{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+    }
+
+    .container-1 , .container-2 , .container-3 {
+      border:3px rgb(17, 16, 16) solid;
+      padding:8px;
+      width:900px;
+    }
+
+    .box-1{
+      flex:1;
+      /* order:1; */
+    }
+
+    .box-2{
+      flex:1;
+      /* order:1; */
+    }
+
+    .box-3{
+      flex:1;
+      /* order: 1; */
+    }
+
+    .container-2-box{
+      flex-basis: 12%;
+    }
+
+    .container-3-box{
+      flex-basis:12%;
+    }
